@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./mfavcon.png" type="image/x-icon">
+</head>
+<body>
+    <pre><h1>
+        input  :  5
+        output :
+        * * * * *  
+         * * * *   
+          * * *    
+           * *     
+            *      
+                
+            
+            input  :  5
+            output :
+       * * * * * 
+       *       * 
+       *       * 
+       *       * 
+       * * * * * 
+       
+       input  :  5
+       output :
+       1 
+       0 1 
+       1 0 1 
+       0 1 0 1 
+       1 0 1 0 1 
+    </h1></pre>
+
+
+    <script>
+let rows2 = +prompt("enter no of rows  :  ")
+
+for (i=0;i<=rows2;i++){
+    s=""
+    for (j=0;j<rows2-i;j++) {
+        s=s+"* "
+    }
+    for(k=0;k<=i;k++){
+        s=" "+s+" "
+    }
+    console.log(s)
+}
+
+let rows1= +prompt("enter no of rows  :  ");
+
+for (i=1;i<=rows1;i++){
+    s=""
+    if(i==1||i==rows1){
+        for(j=1;j<=rows1;j++){
+            s=s+"* "
+        }
+    }
+    else{
+        for(j=1;j<=rows1;j++){
+            if(j==1||j==rows1){
+                s=s+"* "
+            }else{
+                s=s+"  "
+            }
+        }
+  }
+    console.log(s)
+}
+
+
+
+
+let rows = +prompt("enter no of rows  :  ");
+for(i=1;i<=rows;i++){
+    s=""
+    if(i%2===1){
+        for(j=1;j<=i;j++){
+          if(j%2===1) {
+              s=s+1+" "
+          }else {
+               s=s+0+" "
+          }
+        }
+    }
+    else {
+        for(j=1;j<=i;j++){
+          if(j%2===0) {
+              s=s+1+" "
+          }else {
+              s=s+0+" "
+          }
+        } 
+    } 
+    console.log(s)
+}
+
+
+let n= +prompt("enter the numbers  :  ")
+   
+   for ( i = 1; i <= n; i++) {
+        str = '';
+       for ( j = 1; j <= i; j++) {
+           if ((i + j) % 2 === 0) {
+               str=str + 1+" ";
+           } else {
+               str= str + 0+" ";
+           }
+       }
+       console.log(str);
+   }
+
+
+    </script>
+</body>
+</html>
